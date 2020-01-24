@@ -35,7 +35,7 @@ function checkLike(id){
   });
 }
 
-function checkFavorite(){
+function checkFavorite(id){
   console.log("favorBtn is clicked");
   $.ajax({
     url: `https://playentry.org/api/project/favorites/${id}?rows=100000000000000&targetSubject=project&targetType=individual`,
