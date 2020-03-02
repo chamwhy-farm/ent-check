@@ -35,8 +35,10 @@ $(document).ready(function(){
     }
   });
   */
-  var a = $('.likeBtn');
-  if(a.length != 0){
+  var ee = $('.likeBtn');
+  if(ee.length != 0){
+    alert("is ws!!");
+    rgbCode();
     console.log("ewwefewfwee");
     if(Entry.projectId != undefined){
       var id = Entry.projectId;
@@ -50,7 +52,7 @@ $(document).ready(function(){
       })
     }
   }
-  if(window.hasOwnProperty("Entry")){
+  if(window.location.href.startsWith("https://playentry.org/ws#!")){
     alert("is ws!!");
     rgbCode();
   }
